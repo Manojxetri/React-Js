@@ -1,12 +1,14 @@
-import { use } from "react";
+
 import { useState } from "react";
 function Counter(){
-const[count,setCount]=useState(1)
+
+const[count,setCount]=useState(0)
+
 const Increment =()=>setCount(count+1);
 const Decrement =()=> setCount(count-1);
 const Reset =()=>setCount(0);
-console.log(count);
-    return(
+
+return(
         <div className="container">
             <h1>Counter</h1>
             <div className="number">{count}</div>
